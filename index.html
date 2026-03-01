@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Bishop</title>
   <meta name="description" content="Michael Bishop — forecasting researcher and data scientist based in Ottawa.">
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
       --max-width: 660px;
@@ -23,9 +30,14 @@
       padding: 4rem 1.5rem 6rem;
     }
 
-    main { max-width: var(--max-width); margin: 0 auto; }
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
 
-    header { margin-bottom: 3rem; }
+    header {
+      margin-bottom: 3rem;
+    }
 
     h1 {
       font-size: 1.75rem;
@@ -34,9 +46,14 @@
       margin-bottom: 0.3rem;
     }
 
-    .tagline { color: var(--muted); font-size: 0.95rem; }
+    .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
-    section { margin-bottom: 2.5rem; }
+    section {
+      margin-bottom: 2.5rem;
+    }
 
     h2 {
       font-size: 0.7rem;
@@ -47,15 +64,36 @@
       margin-bottom: 1rem;
     }
 
-    p { margin-bottom: 0.8rem; }
-    p:last-child { margin-bottom: 0; }
+    p {
+      margin-bottom: 0.8rem;
+    }
 
-    a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
-    a:hover { opacity: 0.6; }
+    p:last-child {
+      margin-bottom: 0;
+    }
 
-    .pubs { list-style: none; }
-    .pubs li { margin-bottom: 1.1rem; }
-    .pub-title { font-weight: 500; }
+    a {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    .pubs {
+      list-style: none;
+    }
+
+    .pubs li {
+      margin-bottom: 1.1rem;
+    }
+
+    .pub-title {
+      font-weight: 500;
+    }
+
     .pub-meta {
       display: block;
       font-size: 0.85rem;
@@ -63,14 +101,22 @@
       margin-top: 0.1rem;
     }
 
-    .awards { list-style: none; }
+    .awards {
+      list-style: none;
+    }
+
     .awards li {
       display: flex;
       gap: 1rem;
       margin-bottom: 0.4rem;
       font-size: 0.95rem;
     }
-    .award-year { color: var(--muted); min-width: 2.5rem; flex-shrink: 0; }
+
+    .award-year {
+      color: var(--muted);
+      min-width: 2.5rem;
+      flex-shrink: 0;
+    }
 
     footer {
       margin-top: 3rem;
@@ -110,80 +156,105 @@
       font-weight: 500;
     }
 
-    .socials a:hover { opacity: 0.5; }
+    .socials a:hover {
+      opacity: 0.5;
+    }
 
-    .links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
-    .links a { color: var(--muted); }
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--muted);
+    }
   </style>
 </head>
+
 <body>
-<main>
+  <main>
 
-  <header>
-    <div class="header-inner">
-      <img class="avatar" src="Mike_headshot_2b003665178417c11deb9e3c59012654.jpeg" alt="Michael Bishop">
-      <div>
-        <h1>Michael Bishop</h1>
-        <p class="tagline">Forecasting · AI Governance · Ottawa</p>
-        <nav class="socials">
-          <a href="https://x.com/ThatMikeBishop">X</a>
-          <a href="https://bsky.app/profile/thatmikebishop.bsky.social">Bluesky</a>
-          <a href="https://www.linkedin.com/in/dataforesight">LinkedIn</a>
-          <a href="https://github.com/MichaelMBishop">GitHub</a>
-        </nav>
+    <header>
+      <div class="header-inner">
+        <img class="avatar" src="Mike_headshot_2b003665178417c11deb9e3c59012654.jpeg" alt="Michael Bishop">
+        <div>
+          <h1>Michael Bishop</h1>
+          <p class="tagline">Forecasting · AI Governance · Ottawa</p>
+          <nav class="socials">
+            <a href="https://x.com/ThatMikeBishop">X</a>
+            <a href="https://bsky.app/profile/thatmikebishop.bsky.social">Bluesky</a>
+            <a href="https://www.linkedin.com/in/dataforesight">LinkedIn</a>
+            <a href="https://github.com/MichaelMBishop">GitHub</a>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <section>
-    <p>I work on forecasting — how to build systems and find people that make better predictions about uncertain futures. My research has focused on what separates the best forecasters from everyone else, how teams outperform individuals, and how to design infrastructure that makes collective intelligence more accurate.</p>
-    <p>I contributed to the Good Judgment Project team that won the <a href="https://www.iarpa.gov/research-programs/ace">IARPA crowdsourced forecasting tournament</a> and later led the forecasting component of <a href="https://doi.org/10.1098/rsos.200566">DARPA SCORE</a>, a large-scale effort to predict the replicability of social and behavioral science research. Currently I work on AI governance in Ottawa.</p>
-  </section>
+    <section>
+      <p>I work on forecasting — how to build systems and find people that make better predictions about uncertain
+        futures. My research has focused on what separates the best forecasters from everyone else, how teams outperform
+        individuals, and how to design infrastructure that makes collective intelligence more accurate.</p>
+      <p>I contributed to the Good Judgment Project team that won the <a
+          href="https://www.iarpa.gov/research-programs/ace">IARPA crowdsourced forecasting tournament</a> and later <a
+          href="https://doi.org/10.1098/rsos.200566">DARPA SCORE's</a> Replication Markets, a large-scale effort to
+        predict the replicability of social and behavioral science research. Currently I work on AI governance in
+        Ottawa.</p>
+    </section>
 
-  <section>
-    <h2>Research</h2>
-    <ul class="pubs">
-      <li>
-        <a href="https://doi.org/10.1098/rsos.220440" class="pub-title">Forecasting the publication and citation outcomes of COVID-19 preprints</a>
-        <span class="pub-meta">Gordon, Bishop et al. · Royal Society Open Science, 2022</span>
-      </li>
-      <li>
-        <a href="https://doi.org/10.1098/rsos.200566" class="pub-title">Are replication rates the same across academic fields? Community forecasts from the DARPA SCORE programme</a>
-        <span class="pub-meta">Gordon, Viganola, Bishop et al. · Royal Society Open Science, 2020</span>
-      </li>
-      <li>
-        <a href="https://scholar.harvard.edu/files/dtingley/files/teamwork.pdf" class="pub-title">What Makes Foreign Policy Teams Tick? Explaining Variation in Group Performance at Geopolitical Forecasting</a>
-        <span class="pub-meta">Horowitz, Stewart, Tingley, Bishop et al. · Journal of Politics, 2019</span>
-      </li>
-      <li>
-        <a href="https://doi.org/10.18653/v1/D17-1250" class="pub-title">Assessing Objective Recommendation Quality through Political Forecasting</a>
-        <span class="pub-meta">Schwartz, Rouhizadeh, Bishop, Tetlock, Mellers, Ungar · EMNLP, 2017</span>
-      </li>
-      <li>
-        <a href="https://pps.sagepub.com/content/10/3/267.abstract" class="pub-title">Identifying and Cultivating Superforecasters as a Method of Improving Probabilistic Predictions</a>
-        <span class="pub-meta">Mellers, Stone, Bishop, Ungar et al. · Perspectives on Psychological Science, 2015</span>
-      </li>
-      <li>
-        <a href="https://psycnet.apa.org/record/2015-00693-001" class="pub-title">The Psychology of Intelligence Analysis: Drivers of Prediction Accuracy in World Politics</a>
-        <span class="pub-meta">Mellers, Stone, Bishop, Tetlock et al. · Journal of Experimental Psychology: Applied, 2015</span>
-      </li>
-    </ul>
-  </section>
+    <section>
+      <h2>Research</h2>
+      <ul class="pubs">
+        <li>
+          <a href="https://doi.org/10.1098/rsos.220440" class="pub-title">Forecasting the publication and citation
+            outcomes of COVID-19 preprints</a>
+          <span class="pub-meta">Gordon, Bishop et al. · Royal Society Open Science, 2022</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.1098/rsos.200566" class="pub-title">Are replication rates the same across academic
+            fields? Community forecasts from the DARPA SCORE programme</a>
+          <span class="pub-meta">Gordon, Viganola, Bishop et al. · Royal Society Open Science, 2020</span>
+        </li>
+        <li>
+          <a href="https://scholar.harvard.edu/files/dtingley/files/teamwork.pdf" class="pub-title">What Makes Foreign
+            Policy Teams Tick? Explaining Variation in Group Performance at Geopolitical Forecasting</a>
+          <span class="pub-meta">Horowitz, Stewart, Tingley, Bishop et al. · Journal of Politics, 2019</span>
+        </li>
+        <li>
+          <a href="https://doi.org/10.18653/v1/D17-1250" class="pub-title">Assessing Objective Recommendation Quality
+            through Political Forecasting</a>
+          <span class="pub-meta">Schwartz, Rouhizadeh, Bishop, Tetlock, Mellers, Ungar · EMNLP, 2017</span>
+        </li>
+        <li>
+          <a href="https://pps.sagepub.com/content/10/3/267.abstract" class="pub-title">Identifying and Cultivating
+            Superforecasters as a Method of Improving Probabilistic Predictions</a>
+          <span class="pub-meta">Mellers, Stone, Bishop, Ungar et al. · Perspectives on Psychological Science,
+            2015</span>
+        </li>
+        <li>
+          <a href="https://psycnet.apa.org/record/2015-00693-001" class="pub-title">The Psychology of Intelligence
+            Analysis: Drivers of Prediction Accuracy in World Politics</a>
+          <span class="pub-meta">Mellers, Stone, Bishop, Tetlock et al. · Journal of Experimental Psychology: Applied,
+            2015</span>
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Awards</h2>
-    <ul class="awards">
-      <li><span class="award-year">2021</span> Top Prize, Clinical Trials Forecasting (Human Forests)</li>
-      <li><span class="award-year">2014</span> 1st Place, American Civics Exchange</li>
-      <li><span class="award-year">2013</span> 2nd of 3,000+, GJP Probabilistic Forecasting Tournament</li>
-      <li><span class="award-year">2012</span> 1st of 300+, Good Judgment Project Prediction Market</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Awards</h2>
+      <ul class="awards">
+        <li><span class="award-year">2021</span> Top Prize, Clinical Trials Forecasting (Human Forests)</li>
+        <li><span class="award-year">2014</span> 1st Place, American Civics Exchange</li>
+        <li><span class="award-year">2013</span> 2nd of 3,000+, GJP Probabilistic Forecasting Tournament</li>
+        <li><span class="award-year">2012</span> 1st of 300+, Good Judgment Project Prediction Market</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p style="font-size: 0.85rem; color: var(--muted);">Ottawa, ON</p>
-  </footer>
+    <footer>
+      <p style="font-size: 0.85rem; color: var(--muted);">Ottawa, ON</p>
+    </footer>
 
-</main>
+  </main>
 </body>
+
 </html>
