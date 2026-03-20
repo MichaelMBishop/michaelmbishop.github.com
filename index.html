@@ -6,6 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Bishop</title>
   <meta name="description" content="Michael Bishop — forecasting researcher and data scientist based in Ottawa.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Michael Bishop">
+  <meta property="og:description" content="Forecasting researcher and data scientist based in Ottawa. AI governance, superforecasting, and collective intelligence.">
+  <meta property="og:image" content="https://michaelmbishop.github.io/michael-bishop.jpg">
+  <meta property="og:url" content="https://michaelmbishop.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Michael Bishop">
+  <meta name="twitter:description" content="Forecasting researcher and data scientist based in Ottawa. AI governance, superforecasting, and collective intelligence.">
+  <meta name="twitter:image" content="https://michaelmbishop.github.io/michael-bishop.jpg">
+  <meta name="theme-color" content="#111">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Michael Bishop",
+    "url": "https://michaelmbishop.github.io/",
+    "image": "https://michaelmbishop.github.io/michael-bishop.jpg",
+    "jobTitle": "Forecasting Researcher",
+    "description": "Forecasting researcher and data scientist based in Ottawa, working on AI governance, superforecasting, and collective intelligence.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ottawa", "addressRegion": "ON", "addressCountry": "CA" },
+    "sameAs": [
+      "https://x.com/ThatMikeBishop",
+      "https://bsky.app/profile/thatmikebishop.bsky.social",
+      "https://www.linkedin.com/in/dataforesight",
+      "https://github.com/MichaelMBishop"
+    ]
+  }
+  </script>
   <style>
     *,
     *::before,
@@ -82,6 +111,12 @@
       opacity: 0.6;
     }
 
+    a:focus-visible {
+      outline: 2px solid var(--muted);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
     .pubs {
       list-style: none;
     }
@@ -118,14 +153,6 @@
       flex-shrink: 0;
     }
 
-    footer {
-      margin-top: 3rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
     /* Header layout */
     .header-inner {
       display: flex;
@@ -156,8 +183,12 @@
       font-weight: 500;
     }
 
-    .socials a:hover {
-      opacity: 0.5;
+    .socials a:hover,
+    .socials a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      opacity: 0.7;
+      outline: none;
     }
 
     .links {
@@ -169,6 +200,18 @@
     .links a {
       color: var(--muted);
     }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e5e5e5;
+        --muted: #999;
+        --border: #333;
+      }
+
+      body {
+        background: #111;
+      }
+    }
   </style>
 </head>
 
@@ -177,15 +220,15 @@
 
     <header>
       <div class="header-inner">
-        <img class="avatar" src="Mike_headshot_2b003665178417c11deb9e3c59012654.jpeg" alt="Michael Bishop">
+        <img class="avatar" src="michael-bishop.jpg" alt="Michael Bishop" loading="lazy">
         <div>
           <h1>Michael Bishop</h1>
           <p class="tagline">Forecasting · AI Governance · Ottawa</p>
           <nav class="socials">
-            <a href="https://x.com/ThatMikeBishop">X</a>
-            <a href="https://bsky.app/profile/thatmikebishop.bsky.social">Bluesky</a>
-            <a href="https://www.linkedin.com/in/dataforesight">LinkedIn</a>
-            <a href="https://github.com/MichaelMBishop">GitHub</a>
+            <a href="https://x.com/ThatMikeBishop" target="_blank" rel="noopener">X</a>
+            <a href="https://bsky.app/profile/thatmikebishop.bsky.social" target="_blank" rel="noopener">Bluesky</a>
+            <a href="https://www.linkedin.com/in/dataforesight" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/MichaelMBishop" target="_blank" rel="noopener">GitHub</a>
           </nav>
         </div>
       </div>
@@ -196,8 +239,8 @@
         futures. My research has focused on what separates the best forecasters from everyone else, how teams outperform
         individuals, and how to design infrastructure that makes collective intelligence more accurate.</p>
       <p>I contributed to the Good Judgment Project team that won the <a
-          href="https://www.iarpa.gov/research-programs/ace">IARPA crowdsourced forecasting tournament</a> and later <a
-          href="https://doi.org/10.1098/rsos.200566">DARPA SCORE's</a> Replication Markets, a large-scale effort to
+          href="https://www.iarpa.gov/research-programs/ace" target="_blank" rel="noopener">IARPA crowdsourced forecasting tournament</a> and later <a
+          href="https://doi.org/10.1098/rsos.200566" target="_blank" rel="noopener">DARPA SCORE's</a> Replication Markets, a large-scale effort to
         predict the replicability of social and behavioral science research. Currently I work on AI governance in
         Ottawa.</p>
     </section>
@@ -206,33 +249,33 @@
       <h2>Research</h2>
       <ul class="pubs">
         <li>
-          <a href="https://doi.org/10.1098/rsos.220440" class="pub-title">Forecasting the publication and citation
+          <a href="https://doi.org/10.1098/rsos.220440" class="pub-title" target="_blank" rel="noopener">Forecasting the publication and citation
             outcomes of COVID-19 preprints</a>
           <span class="pub-meta">Gordon, Bishop et al. · Royal Society Open Science, 2022</span>
         </li>
         <li>
-          <a href="https://doi.org/10.1098/rsos.200566" class="pub-title">Are replication rates the same across academic
+          <a href="https://doi.org/10.1098/rsos.200566" class="pub-title" target="_blank" rel="noopener">Are replication rates the same across academic
             fields? Community forecasts from the DARPA SCORE programme</a>
           <span class="pub-meta">Gordon, Viganola, Bishop et al. · Royal Society Open Science, 2020</span>
         </li>
         <li>
-          <a href="https://scholar.harvard.edu/files/dtingley/files/teamwork.pdf" class="pub-title">What Makes Foreign
+          <a href="https://scholar.harvard.edu/files/dtingley/files/teamwork.pdf" class="pub-title" target="_blank" rel="noopener">What Makes Foreign
             Policy Teams Tick? Explaining Variation in Group Performance at Geopolitical Forecasting</a>
           <span class="pub-meta">Horowitz, Stewart, Tingley, Bishop et al. · Journal of Politics, 2019</span>
         </li>
         <li>
-          <a href="https://doi.org/10.18653/v1/D17-1250" class="pub-title">Assessing Objective Recommendation Quality
+          <a href="https://doi.org/10.18653/v1/D17-1250" class="pub-title" target="_blank" rel="noopener">Assessing Objective Recommendation Quality
             through Political Forecasting</a>
           <span class="pub-meta">Schwartz, Rouhizadeh, Bishop, Tetlock, Mellers, Ungar · EMNLP, 2017</span>
         </li>
         <li>
-          <a href="https://pps.sagepub.com/content/10/3/267.abstract" class="pub-title">Identifying and Cultivating
+          <a href="https://pps.sagepub.com/content/10/3/267.abstract" class="pub-title" target="_blank" rel="noopener">Identifying and Cultivating
             Superforecasters as a Method of Improving Probabilistic Predictions</a>
           <span class="pub-meta">Mellers, Stone, Bishop, Ungar et al. · Perspectives on Psychological Science,
             2015</span>
         </li>
         <li>
-          <a href="https://psycnet.apa.org/record/2015-00693-001" class="pub-title">The Psychology of Intelligence
+          <a href="https://psycnet.apa.org/record/2015-00693-001" class="pub-title" target="_blank" rel="noopener">The Psychology of Intelligence
             Analysis: Drivers of Prediction Accuracy in World Politics</a>
           <span class="pub-meta">Mellers, Stone, Bishop, Tetlock et al. · Journal of Experimental Psychology: Applied,
             2015</span>
@@ -249,10 +292,6 @@
         <li><span class="award-year">2012</span> 1st of 300+, Good Judgment Project Prediction Market</li>
       </ul>
     </section>
-
-    <footer>
-      <p style="font-size: 0.85rem; color: var(--muted);">Ottawa, ON</p>
-    </footer>
 
   </main>
 </body>
